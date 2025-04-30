@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH MANI - Aspiring Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container"> <div class="logo">CH MANI</div>
+                 <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="hamburger">&#9776;</button> </div>
+        </nav>
+
+        <section id="home" class="hero">
+            <div class="hero-content container"> <h1>Hello, I'm CH MANI</h1>
+                <p class="tagline">Aspiring Developer | Problem Solver | Tech Enthusiast</p> <a href="#projects" class="button">View My Projects</a> </div>
+        </section>
+    </header>
+
+    <main> <section id="about" class="section"> 
+        <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content grid-2"> <div class="profile-image">
+                        <img src="assets/pic.jpg" alt="Ch mani" class="profile-img">
+                    </div>
+                    <div class="profile-text">
+                        <p>Hi, I’m Ch Mani, a passionate computer science student and aspiring developer with a deep love for crafting code and tackling intricate problems. Over the past few years, I've immersed myself in the world of technology, gaining practical experience in a variety of programming languages and domains.</p>
+                        <p>My toolkit includes proficiency in <strong>C</strong>, <strong>Python</strong>, <strong>Java</strong>, and front-end technologies like <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. I've had the opportunity to apply these skills in projects spanning web development, algorithmic problem-solving, object-oriented programming, and database management systems.</p>
+                        <p>I'm a firm believer in continuous learning and am always eager to explore new technologies and methodologies. Outside of coding, you can find me diving into challenging programming puzzles, staying up-to-date with the latest tech trends, and collaborating on open-source initiatives. I'm excited to connect with fellow developers and tech enthusiasts to share insights and contribute to innovative projects!</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section bg-light"> <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid grid-3"> <div class="project-card">
+                        <img src="project1.jpg" alt="Project 1">
+                        <div class="project-info">
+                            <h3>Project 1</h3>
+                            <p>A brief description of Project 1 goes here, highlighting the technologies used and the key features.</p>
+                            <a href="#" target="_blank" class="button button-secondary">View Project</a> </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="project2.jpg" alt="Project 2">
+                        <div class="project-info">
+                            <h3>Project 2</h3>
+                            <p>A concise description of Project 2, focusing on its purpose and your contributions.</p>
+                            <a href="#" target="_blank" class="button button-secondary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="project3.jpg" alt="Project 3">
+                        <div class="project-info">
+                            <h3>Project 3</h3>
+                            <p>Details about Project 3, including the challenges you faced and the solutions you implemented.</p>
+                            <a href="#" target="_blank" class="button button-secondary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-content grid-2"> <div class="contact-info">
+                        <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                        <ul class="contact-details">
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:your.email@example.com">your.email@example.com</a></li> <li><i class="fas fa-phone"></i> +91 XXXXXXXXXX</li> <li><i class="fas fa-map-marker-alt"></i> Your City, India</li> </ul>
+                    </div>
+                    
+
+                     <div class="contact-form">
+                        <form name="submit-to-google-sheet" >
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="text" name="Email" placeholder="your email" required>
+
+                       <textarea name="Message" rows="6" placeholder="Any Message for me...? " required></textarea>
+
+                       <button type="submit" class="btn btn2">Submit</button>
+                       </form>
+                      <span id="msg" ></span>
+                    </div>
+
+                   
+                  </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                </div>
+            <p>&copy; 2025 CH MANI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Basic JavaScript for hamburger menu (you'll need to add CSS for the menu to work)
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
+        }
+    </script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5IN-p_gmCexqAXi48NEZXzGKYn5BGrMTBv8-FXCG-s6GIE8IRXCoGMSyAsAeCWMJK/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML= "Message sent successfully..."
+          setTimeout(function(){
+              msg.innerHTML=""
+          },5000)
+          form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+  </script>
+
+</body>
+</html>
